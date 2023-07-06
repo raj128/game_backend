@@ -17,7 +17,7 @@ app.use(bodyParser.json({ limit: "30mb", extended: true }));
 app.use(bodyParser.urlencoded({ limit: "30mb", extended: true }));
 app.use(cookieParser());
 app.use(cors({
-  origin: 'http://localhost:3000', // Replace with the actual origin of your client application
+  origin: 'https://64a6a64f636ca1186cedb29d--iridescent-cupcake-b3d3c4.netlify.app/', // Replace with the actual origin of your client application
   credentials: true
 }));
 
