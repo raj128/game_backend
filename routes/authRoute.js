@@ -60,6 +60,7 @@ router.post("/login", async (req, res, next) => {
             const token = jwt.sign(payload, process.env.JWT_SECRET);
             res.cookie("access_token", token, {
               httpOnly: true,
+                { domain: "https://64a6a64f636ca1186cedb29d--iridescent-cupcake-b3d3c4.netlify.app/" },
             })
             .json({
               success: true,
